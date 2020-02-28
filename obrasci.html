@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Obrasci</title>
+</head>
+
+<body>
+    <form action="skripta.php" method="POST" name="obrazac1" enctype="application/x-www-form-urlencoded"
+        autocomplete="off">
+        <p>
+            <label for="name">Ime i prezime</label>
+            <input type="text" name="name" id="name" placeholder="Upiši svioj ime i przime" maxlength="20" required>
+        </p>
+        <p>
+            <label for="mail">E mail adrs</label>
+            <input type="" name="mail" id="mail">
+        </p>
+        <p>
+            <label for="tel">Telefon:</label>
+            <input type="tel">
+        </p>
+        <p>
+            <label for="age">Godine</label>
+            <input type="number" name="age" id="age" min="20" max="100" step="">
+        </p>
+        <p>
+            <label for="pass">Vaša zaporka:</label>
+            <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        </p>
+        <p>
+            <label for="color">Tvoja omiljena boja</label>
+            <input type="color" name="color" id="color">
+        </p>
+        <p>
+            <label for="news">Želim primati novosti</label>
+            <input type="checkbox" name="news" id="news" value="true" checked>
+        </p>
+        <p>
+            <label for="sex">Spol</label>
+            <input type="radio" name="sex" id="sexZ" value="Ž" checked> Ženski
+            <input type="radio" name="sex" id="sexM" value="M"> Muški
+        </p>
+        <p>
+            <label for="avatar">Slika</label>
+            <input type="file" name="avatar" id="avatar">
+        </p>
+        <p>
+            <label for="date">Datum:</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+            <label for="comment"></label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </p>
+        <label for="city">Odaberite grad</label>
+        <select name="city" id="city">
+            <option value="London">London</option>
+            <option value="Zageb" selected>Zageb</option>
+            <option value="London">Križvci</option>
+        </select>
+
+        <p>
+            <label for="town">Odaberite ili upišie grad</label>
+            <input type="text" name="town" id="town" list="towns">
+            <datalist id="towns">
+                <option value="London">
+                <option value="Zagreb">
+                <option value="Križvci">
+            </datalist>
+        </p>
+        <p>
+            <button type="">Pošalji podatk:</button>
+            <input type="reset" name="reset" value="Poništi obrazac">
+        </p>
+    </form>
+</body>
+
+</html>
